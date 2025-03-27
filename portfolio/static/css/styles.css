@@ -1,0 +1,503 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.backhead
+{
+    background-color: #43302e;
+background-image: linear-gradient(315deg, #43302e 0%, #ad6f69 74%);
+
+
+
+border-bottom-left-radius: 10%;
+border-bottom-right-radius: 10%;
+
+}
+
+
+
+.back 
+{
+    background-color: #faa499;
+    background-image: url("{% static 'images/headbg.jpg?v=1' %}");
+    background-repeat: repeat;*/
+/*background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%);*/
+
+}
+
+
+.back2
+
+{
+    background-color: #de4256;
+background-image: linear-gradient(315deg, #de4256 0%, #b78e51 74%);
+
+}
+/* Add this to your styles.css file */
+
+/* Add this to your styles.css file */
+
+/* Add this to your styles.css file */
+
+/* Add this to your styles.css file */
+
+.tt 
+{
+    font-size: 3rem; /* Large heading */
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; /* White font color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the heading */
+}
+#projects h2 {
+    font-size: 3rem; /* Large heading */
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; /* White font color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+
+header {
+    background: url('your-image-url.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.team-member, .project {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-member:hover, .project:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+footer p, footer a {
+    font-size: 1rem;
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    footer .social-icons {
+        text-align: center;
+    }
+
+    footer .social-icons a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer .social-icons a {
+        margin-right: 15px;
+    }
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+
+form textarea {
+    height: 150px;
+}
+
+/* Additional styling for projects */
+.project {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Ensure the text is centered */
+    height: 300px; /* Adjust height as needed */
+}
+
+.project h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0; /* Remove default margin */
+}
+.project.ai-solutions {
+    background-image: url('static/images/ai2.jpg');
+    background-size: cover; /* Ensures the image covers the entire box */
+    background-position: center; /* Centers the image */
+    padding: 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    height: 100%; /* Adjust height as needed */
+    color: #fff; /* White text for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+}
+
+
+.project.ai-solutions h3 {
+    font-size: 1.5rem; /* Adjust font size */
+    margin: 0;
+}
+
+.project.ai-solutions2{
+    background-image: url("static/images/cybersecurity.jpg");
+    background-size: cover; /* Ensures the image covers the entire box */
+    background-position: center; /* Centers the image */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    height: 300px; /* Adjust height as needed */
+    color: #fff; /* White text for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+}
+
+.project.ai-solutions3{
+    background-image: url('static/images/erp.jpg');
+    background-size: cover; /* Ensures the image covers the entire box */
+    background-position: center; /* Centers the image */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    height: 300px; /* Adjust height as needed */
+    color: #fff; /* White text for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+}
+
+
+.project.ai-solutions4{
+    background-image: url('static/images/fullstack.jpg');
+    background-size: cover; /* Ensures the image covers the entire box */
+    background-position: center; /* Centers the image */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    height: 300px; /* Adjust height as needed */
+    color: #fff; /* White text for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+}
+
+
+.project.ai-solutions5{
+    background-image: url('static/images/trading.jpg');
+    background-size: cover; /* Ensures the image covers the entire box */
+    background-position: center; /* Centers the image */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    height: 300px; /* Adjust height as needed */
+    color: #fff; /* White text for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+}
+
+
+.project.ai-solutions6{
+    background-image: url('static/images/consultation.jpg');
+    background-size: cover; /* Ensures the image covers the entire box */
+    background-position: center; /* Centers the image */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    height: 300px; /* Adjust height as needed */
+    color: #fff; /* White text for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+}
+/* Styling for the container */
+.custom-team-member {
+    background: linear-gradient(135deg, #faa499, #f7dd85);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto; /* Center the div horizontally */
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the image */
+.custom-image {
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the caption */
+.uncanny-caption {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Styling for the description text */
+.description-text {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.carousel-control-prev.custom-control,
+    .carousel-control-next.custom-control {
+        width: 50px; /* Adjust the width as needed */
+        background-color: rgba(0, 0, 0, 0.1); /* Optional: add a subtle background for better visibility */
+        border-radius: 50%; /* Optional: make the controls circular */
+    }
+
+    /* Align the icons within the smaller controls */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Hover effect for controls */
+    .carousel-control-prev.custom-control:hover,
+    .carousel-control-next.custom-control:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    /* Add some spacing around the logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo {
+    height: 200px; /* Adjust as needed */
+    width: auto;
+}
+
+/* Styling for the heading */
+.portfolio-heading {
+    text-align: center;
+    flex-grow: 1;
+    margin-top: -10px;
+}
+
+.tt {
+    font-size: 3rem; /* Large heading */
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; /* White font color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styling for the header */
+header {
+    background: url('your-image-url.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Make header responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        height: 100%;
+    }
+
+    .tt {
+        font-size: 2rem; /* Adjust font size of heading on smaller screens */
+    }
+}
+/* Example: Customizations for Navbar (Optional) */
+.navbar {
+    background-color: #43302e;
+    padding-top: 10px;
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Customize the hamburger icon color */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Make sure nav links are white */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ad6f69; /* Hover effect on links */
+}
+
+@media (max-width: 992px) { /* Large screens (lg) */
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) { /* Medium screens (md) */
+    .navbar-toggler {
+        margin-top: -10px; /* Shift the hamburger icon slightly upwards */
+    }
+    .portfolio-heading {
+        margin-top: -10px; /* Shift heading upwards for small screens */
+    }
+}
+
+  .counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .flash {
+    animation: flashEffect 2s ease-in-out;
+    color: white;
+    background-color: coral ;
+}
+
+@keyframes flashEffect {
+    0% {
+        background-color: coral;
+    }
+    100% {
+        background-color: coral;
+    }
+}

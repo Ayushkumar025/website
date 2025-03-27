@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Empowered Software Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    {% load static %}    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <script src="{% static 'js/script.js' %}"></script>
+    <style>
+        /* CSS for the page */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .backhead {
+            background-color: #43302e;
+            background-image: linear-gradient(315deg, #43302e 0%, #ad6f69 74%);
+            border-bottom-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+        }
+
+        .tt {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .carousel-inner img {
+            height: 350px;
+            object-fit: cover;
+
+        }
+
+        .carousel-item {
+            padding: 20px;
+            background-color: lightsalmon;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .tech-title {
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .tech-description {
+            color: #666;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            background-color: darkred;
+            border-radius: 50%;
+            border: none;
+            opacity: 0.7;
+        }
+
+        .carousel-indicators .active {
+            opacity: 1;
+            background-color: yellow;
+        }
+
+        .top-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .top-section img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .top-section p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+        /* Change the color of the slider buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: red; /* Set your desired color */
+    border-radius: 50%;       /* Make it circular if needed */
+    width: 40px;              /* Adjust size */
+    height: 40px;
+}
+
+/* Change the button background (optional) */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color:red; /* Semi-transparent background */
+    border: none;                         /* Remove border if needed */
+    border-radius: 50%;                   /* Round buttons */
+}
+
+/* Hover effect for buttons (optional) */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(173, 111, 105, 0.8); /* Brighter color on hover */
+}
+
+/* Accessibility hint visibility */
+.carousel-control-prev span.visually-hidden,
+.carousel-control-next span.visually-hidden 
+{
+
+display: none; /* Hide the "Previous" and "Next" labels */
+}
+    
+    /* Default color of the bullets (black) */
+.carousel-indicators button {
+    background-color: red;
+    border: none; /* Optional: Remove any borders */
+    width: 12px; /* Customize the size */
+    height: 12px;
+    border-radius: 50%; /* Make them circular */
+    opacity: 0.6; /* Adjust visibility for unselected bullets */
+}
+
+/* Highlight color for the active bullet */
+.carousel-indicators .active {
+    background-color: red; /* Keep it black or use a different color for the active one */
+    opacity: 1; /* Fully visible */
+}
+
+ .section-title {
+            /*background-color: #43302e;*/
+            background-color: #090947;
+background-image: linear-gradient(315deg, #090947 0%, #5a585a 74%);
+
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+
+
+<body style="background-color: lightgray;">
+    <!-- Header Section with Bootstrap Grid System -->
+<header class="backhead">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Column 1: Logo -->
+            <div class="col-lg-2 col-md-3 col-sm-4 text-center">
+                <div class="logo-container">
+                    <img src="{% static 'images/logo.jpg' %}" alt="Logo" class="logo img-fluid rounded-circle">
+                </div>
+            </div>
+
+            <!-- Column 2: Heading and Description -->
+            <div class="col-lg-7 col-md-5 col-sm-8 text-center d-flex flex-column justify-content-center">
+                <div>
+                    <!-- Row 1: Heading -->
+                    <h1 class="tt">Free Consultation</h1>
+                </div>
+                <div>
+                    <!-- Row 2: Description -->
+                    <p class="description">We help you to grow with your money and savings.</p>
+                </div>
+            </div>
+
+            <!-- Column 3: Search Bar and Navigation -->
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="row">
+                    <!-- Row 1: Search Bar -->
+                    <div class="col-12 text-center mb-2">
+                        <form class="d-flex justify-content-end" id="search"  action="{% url 'tradesearch' %}" method="get">
+                            <input class="form-control me-2" type="text" name="query" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <!-- Row 2: Navigation Bar -->
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item mx-2 ">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#">Gallery</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<!-- Enquiry Form Section -->
+<section id="enquiry" class="container py-5 back2">
+    <h2 class="text-center mb-5 tt">Enquiry</h2>
+    <form id="enquiry-form" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Send Enquiry</button>
+    </form>
+</section>
+
+<!--first footer -->
+ <footer class="bg-dark text-white py-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <h4>Contact Us</h4>
+                    <p><strong>Phone:</strong> +91 8171772075</p>
+                    <p><strong>Email:</strong><a href="#"> contact@ourportfolio.com</p></a>
+                    <p><strong>Address:</strong> <a href="#">Antriksh Golf City, Sec-150, Noida</p>
+                    <p><strong>Branch office: </strong>Indirapuram, Ghaziabaad</p></a>
+                    <a href="#"><p><strong>Branch office:</strong> 4-D, Emoriaas Town Plaza, Indore</p></a>
+                </div>
+
+                <!-- Map Embed -->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <h4>Our Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3508.6462981700993!2d77.47716257428479!3d28.429927693254538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x390cc1b8859dc431%3A0xdf1861c343cf3ae3!2sCFHG%2BMH2%20Antriksh%20Golf%20city%2C%20sector%20150%2C%20Noida%20%2C%20UP%20201310%2C%20150%2C%20Sector%20150%2C%20Noida%2C%20Uttar%20Pradesh%20201310%2C%20India!3m2!1d28.429923!2d77.4797375!5e0!3m2!1sen!2sus!4v1741735711553!5m2!1sen!2sus" width="250" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook-square" style="font-size:36px;color:blue;"></i></a>
+                          <a href="#"><i class="fa fa-google-plus-circle" style="font-size:36px;color:orangered;"></i></a>
+                          <a href="#"><i class="fa fa-twitter-square" style="font-size:36px;color: #00acee;"></i></a>
+                          <a href="#"><i class="fa fa-instagram" style="font-size:36px;color:rgb(251, 57, 88);"></i></a>
+                          <a href="#"><i class="fa fa-youtube" style="font-size:36px;color:red;"></i></a>
+                          <a href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:steelblue;"></i></a>
+
+                    </div>
+
+                </div>
+                    <p>&copy; 2023 Our Professional Portfolio. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const targetId = "{{ target_id }}";
+            if (targetId) {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+    
+                    targetElement.style.setProperty("--flash-color", "coral");
+                    // Add the flash class to apply the animation
+                    targetElement.classList.add("flash");
+                    
+                    // Remove the class after the animation ends
+                    setTimeout(() => {
+                        targetElement.classList.remove("flash");
+                    }, 2000); // Match the animation duration in CSS
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
